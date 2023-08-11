@@ -1,0 +1,12 @@
+{
+    "name": "stock-tracker-app",
+    "version": "1.0.0",
+    "description": "A simple stock tracker web application",
+    "main": "src/server.js",
+    "scripts": {
+      "start": "node src/server.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1"
+    }
+  }
