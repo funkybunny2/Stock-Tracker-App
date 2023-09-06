@@ -39,10 +39,6 @@ The Stock Tracker App is a web application that allows users to track the latest
 
 The app integrates with a stock market API to fetch stock data. Ensure you have an API key and update the `js/display.js` file with your API key and endpoint details.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 - This app was created as a simple example for tracking stock information.
