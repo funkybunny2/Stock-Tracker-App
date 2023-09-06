@@ -13,16 +13,23 @@
     <main>
       <section>
         <h2>Track a Stock</h2>
-        <input type="text" id="stockSymbol" placeholder="Enter stock symbol" />
+        <input
+          type="text"
+          id="stockSymbolInput"
+          placeholder="Enter stock symbol"
+        />
         <button id="trackButton">Track</button>
       </section>
       <section id="stockInfo">
-        <!-- Stock information will be displayed here -->
+        <h2 id="stockNameDisplay"></h2>
+        <p id="stockSymbolDisplay"></p>
+        <p id="stockPriceDisplay"></p>
+        <p id="stockChangeDisplay"></p>
       </section>
     </main>
     <footer>
       <p>&copy; 2023 Stock Tracker App</p>
     </footer>
-    <script src="../src/server.js"></script>
+    <script src="js/display.js"></script>
   </body>
 </html>
