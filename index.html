@@ -3,12 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Stock Tracker App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url("images/stock.jpg"); /* Path to your background image */
+        background-size: cover; /* Adjusts the image size to cover the entire page */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents image repetition */
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      main {
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      section {
+        margin-bottom: 20px;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+
+      button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <h1>Stock Tracker</h1>
+      <h1 style="font-size: 36px; color: #007bff; text-transform: uppercase">
+        Stock Tracker App
+      </h1>
     </header>
     <main>
       <section>
@@ -24,7 +97,10 @@
         <h2 id="stockNameDisplay"></h2>
         <p id="stockSymbolDisplay"></p>
         <p id="stockPriceDisplay"></p>
-        <p id="stockChangeDisplay"></p>
+        <p id="stockOpenDisplay"></p>
+        <p id="stockHighDisplay"></p>
+        <p id="stockLowDisplay"></p>
+        <p id="stockVolumeDisplay"></p>
       </section>
     </main>
     <footer>
