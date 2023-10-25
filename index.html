@@ -5,10 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Stock Tracker App</title>
+    <script src="https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.4.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.4.1/firebase-analytics.js"></script>
+
+    <script>
+      // Replace with your Firebase project configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyA0PWN4stSM64ad5jZ1X9EzClrbNgvnNrM",
+        authDomain: "stock-tracker-app-c657f.firebaseapp.com",
+        projectId: "stock-tracker-app-c657f",
+        storageBucket: "stock-tracker-app-c657f.appspot.com",
+        messagingSenderId: "242062976072",
+        appId: "1:242062976072:web:003577783c38189387647d",
+        measurementId: "G-BF0KY7R84S",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
   </head>
   <body>
     <header>
       <h1>Stock Tracker</h1>
+      <section>
+        <h2>User Authentication</h2>
+        <form id="signupForm">
+          <h3>Sign Up</h3>
+          <input type="email" id="signupEmail" placeholder="Email" required />
+          <input
+            type="password"
+            id="signupPassword"
+            placeholder="Password"
+            required
+          />
+          <button id="signupButton">Sign Up</button>
+        </form>
+        <form id="loginForm">
+          <h3>Login</h3>
+          <input type="email" id="loginEmail" placeholder="Email" required />
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="Password"
+            required
+          />
+          <button id="loginButton">Log In</button>
+        </form>
+        <button id="logoutButton">Logout</button>
+      </section>
     </header>
     <main>
       <section>
@@ -20,10 +66,9 @@
             placeholder="Enter stock symbol"
           />
           <button id="trackButton">Track</button>
-          <button id="loginButton">Login</button>
-          <button id="logoutButton">Logout</button>
         </div>
       </section>
+
       <section id="stockInfo">
         <h2 id="stockNameDisplay"></h2>
         <div class="stock-details">
@@ -39,7 +84,7 @@
     <footer>
       <p>&copy; 2023 Stock Tracker App</p>
     </footer>
-    <script src="js/display.js"></script>
-    <script src="js/login.js"></script>
+    <script type="module" src="js/display.js"></script>
+    <script type="module" src="js/login.js"></script>
   </body>
 </html>

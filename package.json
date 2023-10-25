@@ -4,9 +4,10 @@
     "description": "A simple stock tracker web application",
     "main": "src/server.js",
     "scripts": {
-      "start": "node src/server.js"
+        "start": "node src/server.js"
     },
     "dependencies": {
-      "express": "^4.17.1"
+        "express": "^4.17.1",
+        "firebase": "^10.5.0"
     }
-  }
+}
